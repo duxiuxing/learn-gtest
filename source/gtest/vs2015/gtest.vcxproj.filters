@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="googletest">
+      <UniqueIdentifier>{62559f56-3e36-4028-9575-b842b910f42d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Win32 DLL">
+      <UniqueIdentifier>{6a2d19cf-a019-4efc-ab70-b202cc981887}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\stdafx.h">
+      <Filter>Win32 DLL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\targetver.h">
+      <Filter>Win32 DLL</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\third_party\googletest\src\gtest-all.cc">
+      <Filter>googletest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dllmain.cpp">
+      <Filter>Win32 DLL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\stdafx.cpp">
+      <Filter>Win32 DLL</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

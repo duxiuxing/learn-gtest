@@ -4,38 +4,30 @@
     <Filter Include="Win32 Console Application">
       <UniqueIdentifier>{f9e9d163-51d0-480d-bd4a-9dab1be739f2}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Win32 Console Application\Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
-    </Filter>
-    <Filter Include="Win32 Console Application\Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
     <Filter Include="sample3">
       <UniqueIdentifier>{caa79e1f-2ec5-4c07-bafd-c31aa48b3f87}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="stdafx.h">
-      <Filter>Win32 Console Application\Header Files</Filter>
+    <ClInclude Include="..\stdafx.h">
+      <Filter>Win32 Console Application</Filter>
     </ClInclude>
-    <ClInclude Include="targetver.h">
-      <Filter>Win32 Console Application\Header Files</Filter>
+    <ClInclude Include="..\targetver.h">
+      <Filter>Win32 Console Application</Filter>
     </ClInclude>
     <ClInclude Include="..\..\third_party\googletest\samples\sample3-inl.h">
       <Filter>sample3</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="stdafx.cpp">
-      <Filter>Win32 Console Application\Source Files</Filter>
+    <ClCompile Include="..\stdafx.cpp">
+      <Filter>Win32 Console Application</Filter>
     </ClCompile>
     <ClCompile Include="..\..\third_party\googletest\samples\sample3_unittest.cc">
       <Filter>sample3</Filter>
     </ClCompile>
     <ClCompile Include="..\..\third_party\googletest\src\gtest_main.cc">
-      <Filter>Win32 Console Application\Source Files</Filter>
+      <Filter>Win32 Console Application</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
