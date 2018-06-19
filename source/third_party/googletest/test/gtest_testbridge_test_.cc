@@ -1,4 +1,4 @@
-// Copyright 2008, Google Inc.
+// Copyright 2018, Google LLC.
 // All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without
@@ -27,17 +27,18 @@
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 //
-// Author: wan@google.com (Zhanyong Wan)
+// Author: rfj@google.com (Rohan Joyce)
+
+// This program is meant to be run by gtest_test_filter_test.py.  Do not run
+// it directly.
 
 #include "gtest/gtest.h"
 
-TEST(DummyTest, Dummy) {
-  // This test doesn't verify anything.  We just need it to create a
-  // realistic stage for testing the behavior of Google Test when
-  // RUN_ALL_TESTS() is called without
-  // testing::InitGoogleTest() being called first.
-}
+// These tests are used to detect if filtering is working. Only
+// 'TestThatSucceeds' should ever run.
 
-int main() {
-  return RUN_ALL_TESTS();
+TEST(TestFilterTest, TestThatSucceeds) {}
+
+TEST(TestFilterTest, TestThatFails) {
+  ASSERT_TRUE(false) << "This test should never be run.";
 }
