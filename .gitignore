@@ -1,4 +1,7 @@
+*.embed.manifest
+*.embed.manifest.res
 *.idb
+*.intermediate.manifest
 *.ipch
 *.lastbuildstate
 *.log
@@ -17,3 +20,7 @@
 /x64_Debug/*
 
 /x64_Release/*
+
+BuildLog.htm
+dte80a.tlh
+mt.dep
