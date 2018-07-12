@@ -12,6 +12,7 @@
 *.sdf
 *.suo
 *.tlog
+*.unsuccessfulbuild
 *.VC.db
 *.vcxproj.user
 *manifest.rc
