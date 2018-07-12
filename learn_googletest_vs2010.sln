@@ -82,6 +82,21 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gmock-internal-utils_test",
 		{3324DCC2-C442-4E00-B986-E759B913F6E7} = {3324DCC2-C442-4E00-B986-E759B913F6E7}
 	EndProjectSection
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gmock-matchers_test", "source\gmock-matchers_test\vs2010\gmock-matchers_test.vcxproj", "{E7DBA45B-9E7E-4192-B0AC-4F29B4D0FBEA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3324DCC2-C442-4E00-B986-E759B913F6E7} = {3324DCC2-C442-4E00-B986-E759B913F6E7}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gmock-more-actions_test", "source\gmock-more-actions_test\vs2010\gmock-more-actions_test.vcxproj", "{EC7EB577-9AC6-407F-8424-F9B249C3C341}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3324DCC2-C442-4E00-B986-E759B913F6E7} = {3324DCC2-C442-4E00-B986-E759B913F6E7}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gmock-nice-strict_test", "source\gmock-nice-strict_test\vs2010\gmock-nice-strict_test.vcxproj", "{34C49A1B-1968-4B45-96B3-A25DCCD6AFCF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3324DCC2-C442-4E00-B986-E759B913F6E7} = {3324DCC2-C442-4E00-B986-E759B913F6E7}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -156,6 +171,18 @@ Global
 		{EBEC8848-78D7-4A44-B752-0C789938F1D6}.Debug|Win32.Build.0 = Debug|Win32
 		{EBEC8848-78D7-4A44-B752-0C789938F1D6}.Release|Win32.ActiveCfg = Release|Win32
 		{EBEC8848-78D7-4A44-B752-0C789938F1D6}.Release|Win32.Build.0 = Release|Win32
+		{E7DBA45B-9E7E-4192-B0AC-4F29B4D0FBEA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E7DBA45B-9E7E-4192-B0AC-4F29B4D0FBEA}.Debug|Win32.Build.0 = Debug|Win32
+		{E7DBA45B-9E7E-4192-B0AC-4F29B4D0FBEA}.Release|Win32.ActiveCfg = Release|Win32
+		{E7DBA45B-9E7E-4192-B0AC-4F29B4D0FBEA}.Release|Win32.Build.0 = Release|Win32
+		{EC7EB577-9AC6-407F-8424-F9B249C3C341}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EC7EB577-9AC6-407F-8424-F9B249C3C341}.Debug|Win32.Build.0 = Debug|Win32
+		{EC7EB577-9AC6-407F-8424-F9B249C3C341}.Release|Win32.ActiveCfg = Release|Win32
+		{EC7EB577-9AC6-407F-8424-F9B249C3C341}.Release|Win32.Build.0 = Release|Win32
+		{34C49A1B-1968-4B45-96B3-A25DCCD6AFCF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{34C49A1B-1968-4B45-96B3-A25DCCD6AFCF}.Debug|Win32.Build.0 = Debug|Win32
+		{34C49A1B-1968-4B45-96B3-A25DCCD6AFCF}.Release|Win32.ActiveCfg = Release|Win32
+		{34C49A1B-1968-4B45-96B3-A25DCCD6AFCF}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -180,5 +207,8 @@ Global
 		{2AC9936D-6120-4E06-B082-0C72E17AF181} = {B0DC6E0B-677B-4D58-BB07-F49BA2FAA2B1}
 		{07DFB76D-D1A9-4DAD-8494-ACED16CD8D05} = {B0DC6E0B-677B-4D58-BB07-F49BA2FAA2B1}
 		{EBEC8848-78D7-4A44-B752-0C789938F1D6} = {B0DC6E0B-677B-4D58-BB07-F49BA2FAA2B1}
+		{E7DBA45B-9E7E-4192-B0AC-4F29B4D0FBEA} = {B0DC6E0B-677B-4D58-BB07-F49BA2FAA2B1}
+		{EC7EB577-9AC6-407F-8424-F9B249C3C341} = {B0DC6E0B-677B-4D58-BB07-F49BA2FAA2B1}
+		{34C49A1B-1968-4B45-96B3-A25DCCD6AFCF} = {B0DC6E0B-677B-4D58-BB07-F49BA2FAA2B1}
 	EndGlobalSection
 EndGlobal
