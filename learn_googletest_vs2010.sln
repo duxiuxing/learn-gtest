@@ -67,6 +67,21 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gmock-generated-function-mo
 		{3324DCC2-C442-4E00-B986-E759B913F6E7} = {3324DCC2-C442-4E00-B986-E759B913F6E7}
 	EndProjectSection
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gmock-generated-internal-utils_test", "source\gmock-generated-internal-utils_test\vs2010\gmock-generated-internal-utils_test.vcxproj", "{2AC9936D-6120-4E06-B082-0C72E17AF181}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3324DCC2-C442-4E00-B986-E759B913F6E7} = {3324DCC2-C442-4E00-B986-E759B913F6E7}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gmock-generated-matchers_test", "source\gmock-generated-matchers_test\vs2010\gmock-generated-matchers_test.vcxproj", "{07DFB76D-D1A9-4DAD-8494-ACED16CD8D05}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3324DCC2-C442-4E00-B986-E759B913F6E7} = {3324DCC2-C442-4E00-B986-E759B913F6E7}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gmock-internal-utils_test", "source\gmock-internal-utils_test\vs2010\gmock-internal-utils_test.vcxproj", "{EBEC8848-78D7-4A44-B752-0C789938F1D6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3324DCC2-C442-4E00-B986-E759B913F6E7} = {3324DCC2-C442-4E00-B986-E759B913F6E7}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -129,6 +144,18 @@ Global
 		{1FD8F8B8-12A4-4408-9D97-81FE459B4198}.Debug|Win32.Build.0 = Debug|Win32
 		{1FD8F8B8-12A4-4408-9D97-81FE459B4198}.Release|Win32.ActiveCfg = Release|Win32
 		{1FD8F8B8-12A4-4408-9D97-81FE459B4198}.Release|Win32.Build.0 = Release|Win32
+		{2AC9936D-6120-4E06-B082-0C72E17AF181}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2AC9936D-6120-4E06-B082-0C72E17AF181}.Debug|Win32.Build.0 = Debug|Win32
+		{2AC9936D-6120-4E06-B082-0C72E17AF181}.Release|Win32.ActiveCfg = Release|Win32
+		{2AC9936D-6120-4E06-B082-0C72E17AF181}.Release|Win32.Build.0 = Release|Win32
+		{07DFB76D-D1A9-4DAD-8494-ACED16CD8D05}.Debug|Win32.ActiveCfg = Debug|Win32
+		{07DFB76D-D1A9-4DAD-8494-ACED16CD8D05}.Debug|Win32.Build.0 = Debug|Win32
+		{07DFB76D-D1A9-4DAD-8494-ACED16CD8D05}.Release|Win32.ActiveCfg = Release|Win32
+		{07DFB76D-D1A9-4DAD-8494-ACED16CD8D05}.Release|Win32.Build.0 = Release|Win32
+		{EBEC8848-78D7-4A44-B752-0C789938F1D6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EBEC8848-78D7-4A44-B752-0C789938F1D6}.Debug|Win32.Build.0 = Debug|Win32
+		{EBEC8848-78D7-4A44-B752-0C789938F1D6}.Release|Win32.ActiveCfg = Release|Win32
+		{EBEC8848-78D7-4A44-B752-0C789938F1D6}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -150,5 +177,8 @@ Global
 		{8FB5EF01-C7C4-43AD-AAC0-5CA956B6F762} = {B0DC6E0B-677B-4D58-BB07-F49BA2FAA2B1}
 		{76530D1D-F161-4479-9506-1D28A3297A61} = {B0DC6E0B-677B-4D58-BB07-F49BA2FAA2B1}
 		{1FD8F8B8-12A4-4408-9D97-81FE459B4198} = {B0DC6E0B-677B-4D58-BB07-F49BA2FAA2B1}
+		{2AC9936D-6120-4E06-B082-0C72E17AF181} = {B0DC6E0B-677B-4D58-BB07-F49BA2FAA2B1}
+		{07DFB76D-D1A9-4DAD-8494-ACED16CD8D05} = {B0DC6E0B-677B-4D58-BB07-F49BA2FAA2B1}
+		{EBEC8848-78D7-4A44-B752-0C789938F1D6} = {B0DC6E0B-677B-4D58-BB07-F49BA2FAA2B1}
 	EndGlobalSection
 EndGlobal
