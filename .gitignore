@@ -6,6 +6,7 @@
 *.lastbuildstate
 *.log
 *.obj
+*.opendb
 *.opensdf
 *.pdb
 *.sdf
@@ -13,6 +14,7 @@
 *.tlog
 *.VC.db
 *.vcxproj.user
+*manifest.rc
 /Debug/*
 
 /Release/*
