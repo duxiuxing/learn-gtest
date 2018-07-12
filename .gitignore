@@ -13,6 +13,7 @@
 *.tlog
 *.VC.db
 *.vcxproj.user
+*manifest.rc
 /Debug/*
 
 /Release/*
