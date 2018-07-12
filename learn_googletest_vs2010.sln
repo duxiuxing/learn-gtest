@@ -97,6 +97,16 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gmock-nice-strict_test", "s
 		{3324DCC2-C442-4E00-B986-E759B913F6E7} = {3324DCC2-C442-4E00-B986-E759B913F6E7}
 	EndProjectSection
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gmock-port_test", "source\gmock-port_test\vs2010\gmock-port_test.vcxproj", "{C7BA0B5C-A5C4-4182-8666-874BB4AFF633}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3324DCC2-C442-4E00-B986-E759B913F6E7} = {3324DCC2-C442-4E00-B986-E759B913F6E7}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gmock-spec-builders_test", "source\gmock-spec-builders_test\vs2010\gmock-spec-builders_test.vcxproj", "{E335C40E-0433-4B77-BA38-D6DC4EF5B371}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3324DCC2-C442-4E00-B986-E759B913F6E7} = {3324DCC2-C442-4E00-B986-E759B913F6E7}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -183,6 +193,14 @@ Global
 		{34C49A1B-1968-4B45-96B3-A25DCCD6AFCF}.Debug|Win32.Build.0 = Debug|Win32
 		{34C49A1B-1968-4B45-96B3-A25DCCD6AFCF}.Release|Win32.ActiveCfg = Release|Win32
 		{34C49A1B-1968-4B45-96B3-A25DCCD6AFCF}.Release|Win32.Build.0 = Release|Win32
+		{C7BA0B5C-A5C4-4182-8666-874BB4AFF633}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C7BA0B5C-A5C4-4182-8666-874BB4AFF633}.Debug|Win32.Build.0 = Debug|Win32
+		{C7BA0B5C-A5C4-4182-8666-874BB4AFF633}.Release|Win32.ActiveCfg = Release|Win32
+		{C7BA0B5C-A5C4-4182-8666-874BB4AFF633}.Release|Win32.Build.0 = Release|Win32
+		{E335C40E-0433-4B77-BA38-D6DC4EF5B371}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E335C40E-0433-4B77-BA38-D6DC4EF5B371}.Debug|Win32.Build.0 = Debug|Win32
+		{E335C40E-0433-4B77-BA38-D6DC4EF5B371}.Release|Win32.ActiveCfg = Release|Win32
+		{E335C40E-0433-4B77-BA38-D6DC4EF5B371}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -210,5 +228,7 @@ Global
 		{E7DBA45B-9E7E-4192-B0AC-4F29B4D0FBEA} = {B0DC6E0B-677B-4D58-BB07-F49BA2FAA2B1}
 		{EC7EB577-9AC6-407F-8424-F9B249C3C341} = {B0DC6E0B-677B-4D58-BB07-F49BA2FAA2B1}
 		{34C49A1B-1968-4B45-96B3-A25DCCD6AFCF} = {B0DC6E0B-677B-4D58-BB07-F49BA2FAA2B1}
+		{C7BA0B5C-A5C4-4182-8666-874BB4AFF633} = {B0DC6E0B-677B-4D58-BB07-F49BA2FAA2B1}
+		{E335C40E-0433-4B77-BA38-D6DC4EF5B371} = {B0DC6E0B-677B-4D58-BB07-F49BA2FAA2B1}
 	EndGlobalSection
 EndGlobal
