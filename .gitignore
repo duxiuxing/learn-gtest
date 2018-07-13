@@ -1,3 +1,4 @@
+*.cache
 *.embed.manifest
 *.embed.manifest.res
 *.idb
@@ -8,6 +9,7 @@
 *.obj
 *.opendb
 *.opensdf
+*.pch
 *.pdb
 *.sdf
 *.suo
