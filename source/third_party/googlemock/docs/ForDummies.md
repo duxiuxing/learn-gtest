@@ -1,9 +1,11 @@
-
+﻿
 
 (**Note:** If you get compiler errors that you don't understand, be sure to consult [Google Mock Doctor](FrequentlyAskedQuestions.md#how-am-i-supposed-to-make-sense-of-these-horrible-template-errors).)
 
 # What Is Google C++ Mocking Framework? #
 When you write a prototype or test, often it's not feasible or wise to rely on real objects entirely. A **mock object** implements the same interface as a real object (so it can be used as one), but lets you specify at run time how it will be used and what it should do (which methods will be called? in which order? how many times? with what arguments? what will they return? etc).
+
+当你在编写一个原型或测试的时候，完全依赖于真实的对象经常是跑不起来的。mock对象实现了跟真实对象一模一样的接口（所以mock对象和真实对象的调用代码也是一模一样的），但可以由你来指定它在运行时的行为（比如调用哪些方法？以什么顺序调用？调用了多少次？使用什么参数？返回值是什么？等等）。
 
 **Note:** It is easy to confuse the term _fake objects_ with mock objects. Fakes and mocks actually mean very different things in the Test-Driven Development (TDD) community:
 
