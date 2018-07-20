@@ -15,6 +15,15 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sample6", "source\sample6\v
 		{5E5AC592-F024-477E-B3D3-19D45DFD6C7F} = {5E5AC592-F024-477E-B3D3-19D45DFD6C7F}
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sample", "sample", "{B0439B28-CDD7-4A90-BF22-12A780AD88DA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{79AE110F-1C1B-4732-8D73-BD42CEE2AB10}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gtest-listener_test", "source\gtest-listener_test\vs2015\gtest-listener_test.vcxproj", "{BAC16FB1-B8E9-4564-9B83-869D9404567C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5E5AC592-F024-477E-B3D3-19D45DFD6C7F} = {5E5AC592-F024-477E-B3D3-19D45DFD6C7F}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -47,8 +56,21 @@ Global
 		{DBDC65D3-C224-4084-8E68-44A6448FB5E7}.Release|x64.Build.0 = Release|x64
 		{DBDC65D3-C224-4084-8E68-44A6448FB5E7}.Release|x86.ActiveCfg = Release|Win32
 		{DBDC65D3-C224-4084-8E68-44A6448FB5E7}.Release|x86.Build.0 = Release|Win32
+		{BAC16FB1-B8E9-4564-9B83-869D9404567C}.Debug|x64.ActiveCfg = Debug|x64
+		{BAC16FB1-B8E9-4564-9B83-869D9404567C}.Debug|x64.Build.0 = Debug|x64
+		{BAC16FB1-B8E9-4564-9B83-869D9404567C}.Debug|x86.ActiveCfg = Debug|Win32
+		{BAC16FB1-B8E9-4564-9B83-869D9404567C}.Debug|x86.Build.0 = Debug|Win32
+		{BAC16FB1-B8E9-4564-9B83-869D9404567C}.Release|x64.ActiveCfg = Release|x64
+		{BAC16FB1-B8E9-4564-9B83-869D9404567C}.Release|x64.Build.0 = Release|x64
+		{BAC16FB1-B8E9-4564-9B83-869D9404567C}.Release|x86.ActiveCfg = Release|Win32
+		{BAC16FB1-B8E9-4564-9B83-869D9404567C}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{40AC0781-E721-4258-938B-471A0B61041D} = {B0439B28-CDD7-4A90-BF22-12A780AD88DA}
+		{DBDC65D3-C224-4084-8E68-44A6448FB5E7} = {B0439B28-CDD7-4A90-BF22-12A780AD88DA}
+		{BAC16FB1-B8E9-4564-9B83-869D9404567C} = {79AE110F-1C1B-4732-8D73-BD42CEE2AB10}
 	EndGlobalSection
 EndGlobal

@@ -4,7 +4,7 @@
     <Filter Include="Generated Files">
       <UniqueIdentifier>{8be15130-e59d-4005-ace9-253970d919e6}</UniqueIdentifier>
     </Filter>
-    <Filter Include="sample">
+    <Filter Include="test">
       <UniqueIdentifier>{32b933b2-db0e-4e2f-89f9-eae1c10d01e6}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -15,19 +15,13 @@
     <ClInclude Include="..\targetver.h">
       <Filter>Generated Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\third_party\googletest\samples\prime_tables.h">
-      <Filter>sample</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\stdafx.cpp">
       <Filter>Generated Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\third_party\googletest\samples\sample6_unittest.cc">
-      <Filter>sample</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\third_party\googletest\src\gtest_main.cc">
-      <Filter>sample</Filter>
+    <ClCompile Include="..\..\third_party\googletest\test\gtest-listener_test.cc">
+      <Filter>test</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

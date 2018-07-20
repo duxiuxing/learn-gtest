@@ -19,9 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{40AC0781-E721-4258-938B-471A0B61041D}</ProjectGuid>
+    <ProjectGuid>{BAC16FB1-B8E9-4564-9B83-869D9404567C}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>sample1</RootNamespace>
+    <RootNamespace>gtest-listener_test</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -156,14 +156,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\third_party\googletest\samples\sample1.h" />
     <ClInclude Include="..\stdafx.h" />
     <ClInclude Include="..\targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\third_party\googletest\samples\sample1.cc" />
-    <ClCompile Include="..\..\third_party\googletest\samples\sample1_unittest.cc" />
-    <ClCompile Include="..\..\third_party\googletest\src\gtest_main.cc" />
+    <ClCompile Include="..\..\third_party\googletest\test\gtest-listener_test.cc" />
     <ClCompile Include="..\stdafx.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="sample1">
+    <Filter Include="sample">
       <UniqueIdentifier>{32b933b2-db0e-4e2f-89f9-eae1c10d01e6}</UniqueIdentifier>
     </Filter>
     <Filter Include="Generated Files">
@@ -16,7 +16,7 @@
       <Filter>Generated Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\third_party\googletest\samples\sample1.h">
-      <Filter>sample1</Filter>
+      <Filter>sample</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -24,10 +24,13 @@
       <Filter>Generated Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\third_party\googletest\samples\sample1.cc">
-      <Filter>sample1</Filter>
+      <Filter>sample</Filter>
     </ClCompile>
     <ClCompile Include="..\..\third_party\googletest\samples\sample1_unittest.cc">
-      <Filter>sample1</Filter>
+      <Filter>sample</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\third_party\googletest\src\gtest_main.cc">
+      <Filter>sample</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
