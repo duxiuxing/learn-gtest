@@ -290,7 +290,7 @@ Admittedly, this test is contrived and doesn't do much. You can easily achieve t
 
 ## Using Google Mock with Any Testing Framework ##
 If you want to use something other than Google Test (e.g. [CppUnit](http://sourceforge.net/projects/cppunit/) or
-[CxxTest](http://cxxtest.tigris.org/)) as your testing framework, just change the `main()` function in the previous section to:
+[CxxTest](https://cxxtest.com/)) as your testing framework, just change the `main()` function in the previous section to:
 
 如果你在用别的测试框架而丌是 Google Test( 比如,CppUnit 戒 CxxUnit ),叧需要把上节中的 main 函数改成下面这样:
 
