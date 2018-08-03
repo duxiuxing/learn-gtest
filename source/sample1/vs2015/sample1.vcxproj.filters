@@ -4,16 +4,16 @@
     <Filter Include="sample1">
       <UniqueIdentifier>{32b933b2-db0e-4e2f-89f9-eae1c10d01e6}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Win32 Console Application">
+    <Filter Include="Generated Files">
       <UniqueIdentifier>{8be15130-e59d-4005-ace9-253970d919e6}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\stdafx.h">
-      <Filter>Win32 Console Application</Filter>
+      <Filter>Generated Files</Filter>
     </ClInclude>
     <ClInclude Include="..\targetver.h">
-      <Filter>Win32 Console Application</Filter>
+      <Filter>Generated Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\third_party\googletest\samples\sample1.h">
       <Filter>sample1</Filter>
@@ -21,16 +21,13 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\stdafx.cpp">
-      <Filter>Win32 Console Application</Filter>
+      <Filter>Generated Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\third_party\googletest\samples\sample1.cc">
       <Filter>sample1</Filter>
     </ClCompile>
     <ClCompile Include="..\..\third_party\googletest\samples\sample1_unittest.cc">
       <Filter>sample1</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\third_party\googletest\src\gtest_main.cc">
-      <Filter>Win32 Console Application</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

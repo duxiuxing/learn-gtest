@@ -1,3 +1,8 @@
+/Debug/*
+/Release/*
+/x64/Debug/*
+/x64/Release/*
+
 *.cache
 *.embed.manifest
 *.embed.manifest.res
@@ -18,13 +23,6 @@
 *.VC.db
 *.vcxproj.user
 *manifest.rc
-/Debug/*
-
-/Release/*
-
-/x64_Debug/*
-
-/x64_Release/*
 
 BuildLog.htm
 dte80a.tlh
