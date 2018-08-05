@@ -12,6 +12,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\third_party\googlemock\src\gmock-all.cc" />
+    <ClCompile Include="..\..\third_party\googlemock\src\gmock_main.cc" />
     <ClCompile Include="..\..\third_party\googletest\src\gtest-all.cc">
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
       </PrecompiledHeaderFile>
@@ -58,7 +59,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>../../third_party/googletest;../../third_party/googletest/include;../../third_party/googlemock;../../third_party/googlemock/include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\third_party\googletest;..\..\third_party\googletest\include;..\..\third_party\googlemock;..\..\third_party\googlemock\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -74,7 +75,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>../../third_party/googletest;../../third_party/googletest/include;../../third_party/googlemock;../../third_party/googlemock/include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\third_party\googletest;..\..\third_party\googletest\include;..\..\third_party\googlemock;..\..\third_party\googlemock\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>

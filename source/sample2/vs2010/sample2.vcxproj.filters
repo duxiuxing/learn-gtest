@@ -1,19 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Win32 Console Application">
-      <UniqueIdentifier>{d6e7c936-9ff3-4c32-82b6-4e7f884cdff6}</UniqueIdentifier>
-    </Filter>
     <Filter Include="sample2">
       <UniqueIdentifier>{d5514ac0-f910-49bd-b441-4bcd5b03137e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{d6e7c936-9ff3-4c32-82b6-4e7f884cdff6}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\stdafx.h">
-      <Filter>Win32 Console Application</Filter>
+      <Filter>Generated Files</Filter>
     </ClInclude>
     <ClInclude Include="..\targetver.h">
-      <Filter>Win32 Console Application</Filter>
+      <Filter>Generated Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\third_party\googletest\samples\sample2.h">
       <Filter>sample2</Filter>
@@ -21,16 +21,13 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\stdafx.cpp">
-      <Filter>Win32 Console Application</Filter>
+      <Filter>Generated Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\third_party\googletest\samples\sample2.cc">
       <Filter>sample2</Filter>
     </ClCompile>
     <ClCompile Include="..\..\third_party\googletest\samples\sample2_unittest.cc">
       <Filter>sample2</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\third_party\googletest\src\gtest_main.cc">
-      <Filter>Win32 Console Application</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
