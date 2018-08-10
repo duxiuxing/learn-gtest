@@ -82,6 +82,7 @@
     <ClInclude Include="..\targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\third_party\googlemock\src\gmock_main.cc" />
     <ClCompile Include="..\..\third_party\googlemock\test\gmock-generated-internal-utils_test.cc" />
     <ClCompile Include="..\stdafx.cpp" />
   </ItemGroup>

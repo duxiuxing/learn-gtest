@@ -12,7 +12,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\third_party\googlemock\src\gmock-all.cc" />
-    <ClCompile Include="..\..\third_party\googlemock\src\gmock_main.cc" />
     <ClCompile Include="..\..\third_party\googletest\src\gtest-all.cc">
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
       </PrecompiledHeaderFile>

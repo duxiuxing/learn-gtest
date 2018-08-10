@@ -41,5 +41,8 @@
     <ClCompile Include="..\turtle_test.cc">
       <Filter>test</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\third_party\googlemock\src\gmock_main.cc">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

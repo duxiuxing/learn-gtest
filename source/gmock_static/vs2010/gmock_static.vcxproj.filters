@@ -15,8 +15,5 @@
     <ClCompile Include="..\..\third_party\googletest\src\gtest-all.cc">
       <Filter>googletest</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\third_party\googlemock\src\gmock_main.cc">
-      <Filter>googlemock</Filter>
-    </ClCompile>
   </ItemGroup>
 </Project>

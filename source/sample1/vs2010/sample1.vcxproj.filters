@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="sample1">
-      <UniqueIdentifier>{1fd5b7d7-6907-462f-8d1a-cf935767105d}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Generated Files">
       <UniqueIdentifier>{7fdf0850-0676-4780-9ba4-079e61425936}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sample">
+      <UniqueIdentifier>{1fd5b7d7-6907-462f-8d1a-cf935767105d}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -16,7 +16,7 @@
       <Filter>Generated Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\third_party\googletest\samples\sample1.h">
-      <Filter>sample1</Filter>
+      <Filter>sample</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -24,10 +24,13 @@
       <Filter>Generated Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\third_party\googletest\samples\sample1.cc">
-      <Filter>sample1</Filter>
+      <Filter>sample</Filter>
     </ClCompile>
     <ClCompile Include="..\..\third_party\googletest\samples\sample1_unittest.cc">
-      <Filter>sample1</Filter>
+      <Filter>sample</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\third_party\googletest\src\gtest_main.cc">
+      <Filter>Generated Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -85,6 +85,7 @@
     <ClInclude Include="..\turtle.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\third_party\googlemock\src\gmock_main.cc" />
     <ClCompile Include="..\painter.cc" />
     <ClCompile Include="..\painter_test.cc" />
     <ClCompile Include="..\stdafx.cpp" />
