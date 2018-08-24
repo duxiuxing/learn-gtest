@@ -1,8 +1,3 @@
-/Debug/*
-/Release/*
-/x64/Debug/*
-/x64/Release/*
-
 *.cache
 *.embed.manifest
 *.embed.manifest.res
@@ -11,6 +6,7 @@
 *.ipch
 *.lastbuildstate
 *.log
+*.ncb
 *.obj
 *.opendb
 *.opensdf
@@ -20,6 +16,7 @@
 *.suo
 *.tlog
 *.unsuccessfulbuild
+*.user
 *.VC.db
 *.vcxproj.user
 *manifest.rc
@@ -27,3 +24,8 @@
 BuildLog.htm
 dte80a.tlh
 mt.dep
+
+/Debug/*
+/Release/*
+/x64/Debug/*
+/x64/Release/*
