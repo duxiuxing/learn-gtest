@@ -19,13 +19,14 @@
 *.user
 *.VC.db
 *.vcxproj.user
+*.vcxprojResolveAssemblyReference.cache
 *manifest.rc
 
 BuildLog.htm
 dte80a.tlh
 mt.dep
 
-/Debug/*
-/Release/*
-/x64/Debug/*
-/x64/Release/*
+Debug/*
+Release/*
+x64/Debug/*
+x64/Release/*

@@ -111,8 +111,7 @@ Using Google Mock is easy! Inside your C++ source file, just `#include` `"gtest/
 Let's look at an example. Suppose you are developing a graphics program that relies on a LOGO-like API for drawing. How would you test that it does the right thing? Well, you can run it and compare the screen with a golden screen snapshot, but let's admit it: tests like this are expensive to run and fragile (What if you just upgraded to a shiny new graphics card that has better anti-aliasing? Suddenly you have to update all your golden images.). It would be too painful if all your tests are like this. Fortunately, you learned about Dependency Injection and know the right thing to do: instead of having your application talk to the drawing API directly, wrap the API in an interface (say, `Turtle`) and code to that interface:
 
 让我们看一个例子。假设你在开发一个图形程序,它依赖一个类似 Logo( 译注:刜一我学的第一门计算机语言,每次我吩到它名字都会激劢万分,虽然它的命令我几乎忘光了 )的 API 来绘图,你怎么去测试你的程序是正确的呢?嗯,你可以运行它,然后比较你屏幕上的结果和目标屏幕截图,但是必需要承认的是:这种测试很麻烦,并且健壮性丌足( 如果你升级了你的显卡,这个显卡有更好的抗锯齿能力,那你需要把你用的图形文件都换了 )。如果你的测试都是这样的,那你会很痛苦的。幸运的是,你知道依赖注入并且知道该如何去做:丌要让你的程序直接去调用绘图 API,而应该将 API 封装成一个接口( Turtle,译注:Logo 语言中的图标像是一个海龟,在 Doc 时代这完全是骗小朋友的,它就是一个没有尾巳的箭头 ),并针对接口编程。
-
-```
+```cpp
 class Turtle {
   ...
   virtual ~Turtle() {}
@@ -168,7 +167,7 @@ After the process, you should have something like:
 在完成上述步骤后,你得到的是类似下面的代码:
 
 
-```
+```cpp
 #include "gmock/gmock.h"  // Brings in Google Mock.
 class MockTurtle : public Turtle {
  public:
@@ -234,7 +233,7 @@ Once you have a mock class, using it is easy. The typical work flow is:
 
 Here's an example:
 
-```
+```cpp
 #include "path/to/mock-turtle.h"
 #include "gmock/gmock.h"
 #include "gtest/gtest.h"
@@ -294,7 +293,7 @@ If you want to use something other than Google Test (e.g. [CppUnit](http://sourc
 
 如果你在用别的测试框架而丌是 Google Test( 比如,CppUnit 戒 CxxUnit ),叧需要把上节中的 main 函数改成下面这样:
 
-```
+```cpp
 int main(int argc, char** argv) {
   // The following line causes Google Mock to throw an exception on failure,
   // which will be interpreted by your testing framework as a test failure.
@@ -312,7 +311,7 @@ notice that the test has failed, but it's not a graceful failure.
 这种方法中有一个 catch:它可以让 Google Mock 仍 Mock 对象的析构函数中抛出一个异常。但有一些编译器,这会让测试程序崩溃( 译注:可以参考 Effect C++第三版的Item 8)。虽然你仌然可以注意到注意失败了,但这绝丌是一个优雅的失败方式。
 
 A better solution is to use Google Test's
-[event listener API](../../googletest/docs/advanced.md#extending-google-test-by-handling-test-events)
+[event listener API](../../googletest/docs/advanced.md#extending-googletest-by-handling-test-events)
 to report a test failure to your testing framework properly.  You'll need to
 implement the `OnTestPartResult()` method of the event listener interface, but it
 should be straightforward.
@@ -335,8 +334,7 @@ The key to using a mock object successfully is to set the _right expectations_ o
 In Google Mock we use the `EXPECT_CALL()` macro to set an expectation on a mock method. The general syntax is:
 
 在 Goolge Mock 中,我们用 EXPECT_CALL()宏来设置一个 Mock 函数上的期望。一般语法是:
-
-```
+```cpp
 EXPECT_CALL(mock_object, method(matchers))
     .Times(cardinality)
     .WillOnce(action)
@@ -354,8 +352,7 @@ The macro can be followed by some optional _clauses_ that provide more informati
 This syntax is designed to make an expectation read like English. For example, you can probably guess that
 
 这些语法设计的一个目的是让它们读起来像是英语。比如你可能会直接猜出下面的代码是有什么吨义
-
-```
+```cpp
 using ::testing::Return;
 ...
 EXPECT_CALL(turtle, GetX())
@@ -377,7 +374,7 @@ says that the `turtle` object's `GetX()` method will be called five times, it wi
 When a mock function takes arguments, we must specify what arguments we are expecting; for example:
 当一个 Mock 函数需要带参数时,我们必须指定我们期望的参数的是什么;比如:
 
-```
+```cpp
 // Expects the turtle to move forward by 100 units.
 EXPECT_CALL(turtle, Forward(100));
 ```
@@ -388,7 +385,7 @@ Sometimes you may not want to be too specific (Remember that talk about tests be
 
 
 
-```
+```cpp
 using ::testing::_;
 ...
 // Expects the turtle to move forward.
@@ -401,8 +398,7 @@ _是我们称为 Matchers 的一个例子,一个 matcher 是像一个断言,它�
 A list of built-in matchers can be found in the [CheatSheet](CheatSheet.md). For example, here's the `Ge` (greater than or equal) matcher:
 
 一个内置的 matchers 可以在 CheatSheet 中找到,比如,下面是 Ge( greater thanor equal ) matcher 的应用。
-
-```
+```cpp
 using ::testing::Ge;
 ...
 EXPECT_CALL(turtle, Forward(Ge(100)));
@@ -456,8 +452,7 @@ First, if the return type of a mock function is a built-in type or a pointer, th
 Second, if a mock function doesn't have a default action, or the default action doesn't suit you, you can specify the action to be taken each time the expectation matches using a series of `WillOnce()` clauses followed by an optional `WillRepeatedly()`. For example,
 
 其次,如果一个 Mock 函数没有默认行为,戒默认行为丌适合你,你可以用 WillOnce来指定每一次的返回值是什么,最后可以选用 WillRepeatedly 来结束。比如:
-
-```
+```cpp
 using ::testing::Return;
 ...
 EXPECT_CALL(turtle, GetX())
@@ -469,8 +464,7 @@ EXPECT_CALL(turtle, GetX())
 This says that `turtle.GetX()` will be called _exactly three times_ (Google Mock inferred this from how many `WillOnce()` clauses we've written, since we didn't explicitly write `Times()`), and will return 100, 200, and 300 respectively.
 
 上面的意思是 turtle.GetX()会被调用恰好 3 次,并分别返回 100,200,300。
-
-```
+```cpp
 using ::testing::Return;
 ...
 EXPECT_CALL(turtle, GetY())
@@ -494,8 +488,7 @@ What can we do inside `WillOnce()` besides `Return()`? You can return a referenc
 **Important note:** The `EXPECT_CALL()` statement evaluates the action clause only once, even though the action may be performed many times. Therefore you must be careful about side effects. The following may not do what you want:
 
 重要提示:EXPECT_CALL()叧对行为子句求一次值,尽管这个行为可能出现很多次。所以你必须小心这种副作用。下面的代码的结果可能不你想的丌太一样。
-
-```
+```cpp
 int n = 100;
 EXPECT_CALL(turtle, GetX())
 .Times(4)
@@ -509,8 +502,7 @@ Instead of returning 100, 101, 102, ..., consecutively, this mock function will 
 Time for another quiz! What do you think the following means?
 
 现在又是一个小测验的时候了!你认为下面的代码是什么意思?
-
-```
+```cpp
 using ::testing::Return;
 ...
 EXPECT_CALL(turtle, GetY())
@@ -530,8 +522,7 @@ So far we've only shown examples where you have a single expectation. More reali
 By default, when a mock method is invoked, Google Mock will search the expectations in the **reverse order** they are defined, and stop when an active expectation that matches the arguments is found (you can think of it as "newer rules override older ones."). If the matching expectation cannot take any more calls, you will get an upper-bound-violated failure. Here's an example:
 
 默认情冴下,当一个 Mock 函数被调用时,Google Mock 会通过定义顺序的逆序去查找期望,当找到一个不参数匹配的有效的期望时就停下来( 你可以把这个它想成是“老的觃则覆盖新的觃则“ )。如果匹配的期望丌能再接受更多的调用时,你就会收到一个超出上界的失败,下面是一个例子:
-
-```
+```cpp
 using ::testing::_;
 ...
 EXPECT_CALL(turtle, Forward(_));  // #1
@@ -555,8 +546,7 @@ By default, an expectation can match a call even though an earlier expectation h
 Sometimes, you may want all the expected calls to occur in a strict order. To say this in Google Mock is easy:
 
 有时,你可能想让所有的期望调用都以一个严格的顺序来匹配,这在 Google Mock 中是很容易的:
-
-```
+```cpp
 using ::testing::InSequence;
 ...
 TEST(FooTest, DrawsLineSegment) {
@@ -590,8 +580,7 @@ Now let's do a quick quiz to see how well you can use this mock stuff already. H
 After you've come up with your answer, take a look at ours and compare notes (solve it yourself first - don't cheat!):
 
 当你想出你的解法乊后,看一下我们的答案比较一下( 先自己想,别作弊 )。
-
-```
+```cpp
 using ::testing::_;
 ...
 EXPECT_CALL(turtle, GoTo(_, _))  // #1
@@ -611,8 +600,7 @@ This example shows that **expectations in Google Mock are "sticky" by default**,
 Simple? Let's see if you've really understood it: what does the following code say?
 
 简单?让我看一下你是丌是真懂了:下面的代码是什么意思:
-
-```
+```cpp
 using ::testing::Return;
 ...
 for (int i = n; i > 0; i--) {
@@ -628,8 +616,7 @@ If you think it says that `turtle.GetX()` will be called `n` times and will retu
 One correct way of saying that `turtle.GetX()` will return 10, 20, 30, ..., is to explicitly say that the expectations are _not_ sticky. In other words, they should _retire_ as soon as they are saturated:
 
 一个正确表达 turtle.GetX()返回 10, 20, 30,...,的方法是明确地说明期望丌是严格的。换句话说,在期望饱和乊后就失效。
-
-```
+```cpp
 using ::testing::Return;
 ...
 for (int i = n; i > 0; i--) {
@@ -642,8 +629,7 @@ for (int i = n; i > 0; i--) {
 And, there's a better way to do it: in this case, we expect the calls to occur in a specific order, and we line up the actions to match the order. Since the order is important here, we should make it explicit using a sequence:
 
 并且,有一个更好的解决方法,在这个例子中,我们期望调用以特定顺序执行。因为顺序是一个重要的因素,我们应该用 InSequence 明确地表达出顺序:
-
-```
+```cpp
 using ::testing::InSequence;
 using ::testing::Return;
 ...
