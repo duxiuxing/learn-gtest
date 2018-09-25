@@ -19,9 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{DBDC65D3-C224-4084-8E68-44A6448FB5E7}</ProjectGuid>
+    <ProjectGuid>{40AC0781-E721-4258-938B-201809252003}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>sample6</RootNamespace>
+    <RootNamespace>sample10</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -156,13 +156,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\third_party\googletest\samples\prime_tables.h" />
     <ClInclude Include="..\stdafx.h" />
     <ClInclude Include="..\targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\third_party\googletest\samples\sample6_unittest.cc" />
-    <ClCompile Include="..\..\third_party\googletest\src\gtest_main.cc" />
+    <ClCompile Include="..\..\third_party\googletest\samples\sample10_unittest.cc" />
     <ClCompile Include="..\stdafx.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

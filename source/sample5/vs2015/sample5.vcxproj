@@ -19,9 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{DBDC65D3-C224-4084-8E68-44A6448FB5E7}</ProjectGuid>
+    <ProjectGuid>{C4FFF59C-6CEC-4C15-82F2-BDFEC8699554}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>sample6</RootNamespace>
+    <RootNamespace>sample5</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -120,7 +120,7 @@
       <WarningLevel>Level3</WarningLevel>
       <PrecompiledHeader>
       </PrecompiledHeader>
-      <Optimization>Disabled</Optimization>
+      <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -156,12 +156,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\third_party\googletest\samples\prime_tables.h" />
+    <ClInclude Include="..\..\third_party\googletest\samples\sample1.h" />
+    <ClInclude Include="..\..\third_party\googletest\samples\sample3-inl.h" />
     <ClInclude Include="..\stdafx.h" />
     <ClInclude Include="..\targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\third_party\googletest\samples\sample6_unittest.cc" />
+    <ClCompile Include="..\..\third_party\googletest\samples\sample1.cc" />
+    <ClCompile Include="..\..\third_party\googletest\samples\sample5_unittest.cc" />
     <ClCompile Include="..\..\third_party\googletest\src\gtest_main.cc" />
     <ClCompile Include="..\stdafx.cpp" />
   </ItemGroup>
