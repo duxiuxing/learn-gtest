@@ -50,6 +50,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sample7", "source\sample7\v
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sample8", "source\sample8\vs2015\sample8.vcxproj", "{40AC0781-E721-4258-938B-201809251958}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5E5AC592-F024-477E-B3D3-19D45DFD6C7F} = {5E5AC592-F024-477E-B3D3-19D45DFD6C7F}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sample9", "source\sample9\vs2015\sample9.vcxproj", "{40AC0781-E721-4258-938B-201809252002}"
 	ProjectSection(ProjectDependencies) = postProject
