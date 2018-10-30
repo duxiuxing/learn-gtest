@@ -20,7 +20,7 @@
     <ClCompile Include="..\stdafx.cpp">
       <Filter>Generated Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\third_party\googletest\test\gtest-listener_test.cc">
+    <ClCompile Include="..\..\third_party\googletest\test\googletest-listener-test.cc">
       <Filter>test</Filter>
     </ClCompile>
   </ItemGroup>

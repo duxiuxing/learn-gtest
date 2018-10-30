@@ -19,7 +19,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sample", "sample", "{B0439B
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{79AE110F-1C1B-4732-8D73-BD42CEE2AB10}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gtest-listener_test", "source\gtest-listener_test\vs2015\gtest-listener_test.vcxproj", "{BAC16FB1-B8E9-4564-9B83-869D9404567C}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "googletest-listener-test", "source\googletest-listener-test\vs2015\googletest-listener-test.vcxproj", "{BAC16FB1-B8E9-4564-9B83-869D9404567C}"
 	ProjectSection(ProjectDependencies) = postProject
 		{5E5AC592-F024-477E-B3D3-19D45DFD6C7F} = {5E5AC592-F024-477E-B3D3-19D45DFD6C7F}
 	EndProjectSection
