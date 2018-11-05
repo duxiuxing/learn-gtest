@@ -7,6 +7,9 @@
     <Filter Include="Win32 DLL">
       <UniqueIdentifier>{6a2d19cf-a019-4efc-ab70-b202cc981887}</UniqueIdentifier>
     </Filter>
+    <Filter Include="googlemock">
+      <UniqueIdentifier>{df7a7f29-b4d7-4156-a802-1d437b5da460}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\stdafx.h">
@@ -25,6 +28,9 @@
     </ClCompile>
     <ClCompile Include="..\stdafx.cpp">
       <Filter>Win32 DLL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\third_party\googlemock\src\gmock-all.cc">
+      <Filter>googlemock</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

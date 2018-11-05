@@ -4,10 +4,16 @@
     <Filter Include="googletest">
       <UniqueIdentifier>{6d773384-1e0f-4004-84cc-700fe8f0172b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="googlemock">
+      <UniqueIdentifier>{66583d60-018a-4e65-af90-a42b7c9099bd}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\third_party\googletest\src\gtest-all.cc">
       <Filter>googletest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\third_party\googlemock\src\gmock-all.cc">
+      <Filter>googlemock</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
