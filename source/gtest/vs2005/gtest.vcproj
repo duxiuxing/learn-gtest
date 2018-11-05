@@ -40,8 +40,8 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="..\..\third_party\googlemock_vs2005;..\..\third_party\googlemock_vs2005\include;..\..\third_party\googletest_vs2005;..\..\third_party\googletest_vs2005\include"
-				PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS;_USRDLL"
+				AdditionalIncludeDirectories="..\..\third_party\googlemock;..\..\third_party\googlemock\include;..\..\third_party\googletest;..\..\third_party\googletest\include"
+				PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS;_USRDLL;GTEST_CREATE_SHARED_LIBRARY"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="3"
@@ -116,8 +116,8 @@
 			/>
 			<Tool
 				Name="VCCLCompilerTool"
-				AdditionalIncludeDirectories="..\..\third_party\googlemock_vs2005;..\..\third_party\googlemock_vs2005\include;..\..\third_party\googletest_vs2005;..\..\third_party\googletest_vs2005\include"
-				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS;_USRDLL"
+				AdditionalIncludeDirectories="..\..\third_party\googlemock;..\..\third_party\googlemock\include;..\..\third_party\googletest;..\..\third_party\googletest\include"
+				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS;_USRDLL;GTEST_CREATE_SHARED_LIBRARY"
 				RuntimeLibrary="2"
 				UsePrecompiledHeader="0"
 				WarningLevel="3"
@@ -175,7 +175,7 @@
 			Name="googletest"
 			>
 			<File
-				RelativePath="..\..\third_party\googletest_vs2005\src\gtest-all.cc"
+				RelativePath="..\..\third_party\googletest\src\gtest-all.cc"
 				>
 			</File>
 		</Filter>
@@ -219,7 +219,7 @@
 			Name="googlemock"
 			>
 			<File
-				RelativePath="..\..\third_party\googlemock_vs2005\src\gmock-all.cc"
+				RelativePath="..\..\third_party\googlemock\src\gmock-all.cc"
 				>
 			</File>
 		</Filter>
